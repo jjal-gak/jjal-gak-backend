@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 import org.hibernate.annotations.DynamicInsert;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -12,6 +13,7 @@ import lombok.Data;
 
 @Data
 @Table(name = "COMMENT")
+@Entity
 @DynamicInsert
 public class Comment {
 	@Id

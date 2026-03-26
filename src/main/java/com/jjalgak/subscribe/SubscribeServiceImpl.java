@@ -13,7 +13,7 @@ import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
-public class SubscribeServiceImpl {
+public class SubscribeServiceImpl implements SubscribeService {
 
 	private final Map<String, SseEmitter> sseEmitters = new ConcurrentHashMap<>();
 	
